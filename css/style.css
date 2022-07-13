@@ -1,0 +1,156 @@
+/*--------------------------------- NAVBAR------------------------------------*/
+html { background: #dee0e4;  }
+body { width: 100%; height: 100vh; font-family: 'Lato'; }
+.cu-container--big  { max-width: 1100px; margin: 0 auto; }  
+.content-web { margin-top: 4rem; border-radius: 50px;  width: 100%; background: #f6f8fc; height: 100%; padding-bottom: 8rem; }
+
+.user-avatar__nav { height: 25px; width: 25px; border-radius: 5000px; }
+.user-div__nav { display: flex; align-items: center; }
+.user-div__nav > img{ margin: 0 20px; }
+.info-web__nav { display: flex; align-items: center; } 
+.info-web__nav >img{ margin-right: 60px; } 
+#navbar-flex ul li a:hover { background: none !important; }
+#navbar-flex ul li a.active { font-weight: bold; border-bottom: 2px solid #4687db; }
+#navbar-flex { align-items: center !important; background: none !important; padding-top: 2rem !important; position: relative !important; } 
+.container-web { margin: 0 2rem; }
+
+@media (max-width: 991px){ 
+    #navbar-flex ul { display: flex !important; } 
+    .info-web__nav >img{ margin-right: 30px; } 
+    #navbar-flex ul li a { font-size: 11px; margin: 0 0.15rem !important; }
+   
+}
+@media (max-width: 600px){ 
+    #navbar-flex ul { display: flex !important;}
+    .user-div__nav { display: none !important; }
+    #navbar-flex ul li a { font-size: 11px; }
+    .info-web__nav >img{ margin-right: 20px; } 
+    
+}
+/*---------------------------------END NAVBAR------------------------------------*/
+
+
+/*---------------------------------HEROAREA------------------------------------*/
+.banner-hero__features { min-height: 70vh; border-radius: 50px; width: 100%; display: block; background: linear-gradient(#c1b5c6 , #e7dfd9); color: #191717; }
+.main-hero {  align-items: center !important; }
+.headline__hero__big { font-size: 42px; font-weight: bold; letter-spacing: 2px;  }
+.subheadline__hero__med { font-size: 16px; color: #5d5662; }
+.btn-get-demo { background: #1c1c1c; color: #fff; width: 100%; height: auto; outline: none; border: none; border-radius: 20px; }
+.icon-subhero { font-size: 22px; font-weight: bold; }
+.subhero { background: linear-gradient(#d2d0d3 , #e7e5e3) !important; margin: 0 3rem auto; border-radius: 30px; transform: translateY(5rem);  padding-bottom: 1rem;}
+
+@media (max-width: 960px) {
+    .icon-headline__subhero{ font-size: 18px; }
+    .icon-subhero { font-size: 16px; }
+}
+
+@media (max-width: 760px) {
+    .btn-get-demo { display: none !important; } 
+}
+/*---------------------------------END HEROAREA------------------------------------*/
+
+/*---------------------------------PRFILEE USER------------------------------------*/
+.pt-8 { padding-top: 12rem; }
+.main-user-profile__headline { font-weight: bolder;  font-size: 26px;}
+.user-profile-img { height: 150px; width: auto; border-radius: 30px; }
+.user-name__profile { font-weight: bolder; font-size: 18px; }
+.user-profile__felling { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.icon-feeling-user { margin-top: 1.3rem; }
+.icon-feeling-user i{ font-size: 22px; transition: all 0.3s ease-in; }
+.icon-feeling-user i:hover{ font-size: 22px; transform: translateY(-0.4rem); }
+.happy__icon:hover { color: #ffb938; } 
+.love__icon:hover { color: #ff3849; } 
+.sad__icon:hover { color: #4f38ff; } 
+.col-first { border-right: 5px solid #efeef1; }
+.reviwed-user-img { height: 80px !important; border-radius: 5px; }
+.col__first { flex: 0.7 !important; background: #fff; border-radius: 30px; }
+.col__second {  flex: 0.3 !important; background: #1d2328; height: auto; border-radius: 30px;  }
+.showMore-box { position: relative; background: url('./DOMOREA--WALLPAPER.jpg') !important; }
+.text-inside__box { position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); color: #fff; }
+.g-col-3 { grid-gap: 20px; }
+
+.underline__proplan { width: 30%; height: 3px; background: #fff; }
+.card__top__proplan { display: flex; justify-content: space-evenly; align-items: center; }
+.img-proplan { height: 80px; }
+.gray-text__plan { color: #f9f9f9; }
+.para__plan { color: gray; letter-spacing: 2px; }
+
+
+@media (max-width: 900px) {
+    .g-col-3 { grid-template-columns: repeat(2 , 1fr) !important;}
+}
+
+@media (max-width: 700px) {
+    .g-col-3 { grid-template-columns: repeat(1 , 1fr) !important;}
+}
+/*---------------------------------END PRFILEE USER------------------------------------*/
+
+
+/*---------------------------------USER POSTS------------------------------------*/
+
+.headline__majors { font-size: 43px; font-weight: bolder; letter-spacing: 2px; }
+.subheadline__majors { font-size: 18px; font-weight: lighter; margin-top: 2rem !important; }
+
+.user--profile__user { width: 70px; height: 70px; border-radius: 50px; border: 4px solid #9387ff; }
+.post-user__single { background: #fff; width: 100%; border-radius: 20px; margin-left: 1.3rem; padding: 2rem; }
+.post--user__title { text-transform: capitalize; }
+.g-col-2 { grid-gap: 30px; }
+
+@media (max-width: 790px) {
+    .post--user__title { font-size: 18px; }
+    .post-user-desc { font-size: 13px; }
+}
+
+@media (max-width: 680px) {
+    .g-col-2 { grid-template-columns: repeat(1 ,1fr) !important; }
+}
+/*---------------------------------END USER POSTS------------------------------------*/
+
+/*---------------------------------USERS EVENTS------------------------------------*/
+.event-box__single { background: #fff; position: relative; margin-top: 4rem; z-index: 1000; margin-bottom: 7rem !important; border-radius: 30px; }
+.event-box__single::after { content: ''; border: 1px solid rgb(53, 53, 53); position: absolute; top:0; height: 350px; left:10px; transform: translateY(-4rem); z-index: -10;  }
+.user__event--date { position: absolute; top: -110px; left: -10px; }
+.user__event--img { border-radius: 30px; width: 150px ;height: 150px; transform: translateY(-3rem); margin-bottom: 1rem; }
+.user__event--title { transform: translateY(-2rem); }
+.user__event--description { transform: translateY(-1.5rem); font-size: 14px; }
+.mt-8 { margin-top: 8rem !important; }
+.user__event__image { height: 50px; width: 50px; border-radius: 500px; position: absolute; top: -15px; right: -10px; }
+/*---------------------------------USERS EVENTS------------------------------------*/
+
+
+/*---------------------------------BANNER PRODYUCTS------------------------------------*/
+.banner-product__ancient { background: orangered; color: #fff; height: auto; padding-bottom: 6rem; }
+.banner_product__container { max-width: 1200px ; margin: 0 auto; }
+.headline__banner--products { font-size: 52px; font-weight: lighter; }
+.white-bold { font-weight: bold; }
+.single__product__ancinet { background: #fff; color: #000; margin: 1.2rem;  padding-bottom: 1rem; transition: all 0.5s ease-in; }
+.single__product__ancinet:hover { transform: translateY(-2rem);  box-shadow: 2px 8px 15px #222;  }
+.single__product__ancinet:hover .flex-col > img:hover{ transform:skew(-15deg)}
+.single__product--img { height: 150px; width: auto; }
+.sell-sector { width: 80%; height: 100%; background: #e8e8e8; border-radius: 500px; position: relative; }
+.sell-sector::before { width: 30%; height: 100%; background: #0d893d; border-radius: 500px; position: absolute; top: 0; left: 0; content: ''; }
+.percantages__sector { position: absolute; top: -30px; left: 0; }
+.product__section__ancinet { background: #f2eeee; }
+
+@media (max-width: 1000px) {
+    .g-col-4 { grid-template-columns: repeat(3 , 1fr) !important; }
+}
+
+@media (max-width: 800px) {
+    .g-col-4 { grid-template-columns: repeat(2 , 1fr) !important; }
+}
+
+@media (max-width: 600px) {
+    .g-col-4 { grid-template-columns: repeat(1 , 1fr) !important; }
+}
+
+/*---------------------------------END BANNER PRODYUCTS------------------------------------*/
+
+
+/*---------------------------------MUSIANS USER------------------------------------*/
+
+.pt-6 { padding-top: 8rem; }
+.single-musian__user { background: #fff; height: auto; margin: 2rem 0; padding: 2rem 0; }
+.musian-img__user { position: relative;  border-radius: 3000px; width: auto; height: 250px; border: 2px solid orangered; }
+
+/*---------------------------------END MUSIANS USER------------------------------------*/
